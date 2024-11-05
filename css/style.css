@@ -1,0 +1,222 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+nav{
+    background-color: red;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: aqua;
+    
+}
+nav ul li a{
+    color: white;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+}
+nav a{
+    text-decoration: none;
+}
+.logo a{
+    font-size: 30px;
+    font-weight: bolder;
+    color: aqua;
+    
+}
+nav a:hover{
+    color: blue;
+}
+.menu-line{
+    height: 3px;
+    width: 20px;
+    background-color: aqua;
+    margin-bottom: 3px;
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+.container img{
+    height: 40%;
+    width: 100%;
+}
+.main{
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: 1.3px;
+    color: red;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-container > .box{
+    padding: 20px;
+}
+
+.flex-container button{
+    padding: 8px;
+    border: 2px solid black;
+    background-color: red;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 3px;
+}
+
+.flex-container1{
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid black; */
+    margin-left: 50px;
+}
+
+.flex-container1 > .box1{
+    margin-top: 30px;
+    text-align: center;
+    margin-right: 40px;
+}
+.flex-container1 > .box1 h2{
+    color: red;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.flex-container > .box1 p{
+    text-align: justify;
+
+}
+
+.flex-container1 > .box2{
+    margin-top: 30px;
+}
+
+.flex-container2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-container2 > .box3{
+    padding: 30px;
+    margin-top: 50px;
+}
+.main img{
+    height: 40%;
+    width: 100%;
+
+}
+
+.iframe{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url("../images/bg\ img1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 40px;
+}
+.iframe > .frame{
+    padding: 40px;
+}
+
+.footer{
+    background-color: red;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+
+@media screen and (max-width:650px) {
+    nav{
+        flex-direction: column;
+    }
+    nav li{
+        display: block;
+        padding: 10px 0;;
+    }
+    ul{
+        text-align: center;
+        padding: 0px;
+        display: none;
+    }
+    .logo{
+        align-self: flex-start;
+        margin: 10px 0px 0px 30px;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 17px;
+    }
+
+    .showmenu{
+        display: block;
+    }
+    .container img{
+        width: 100%;
+        height: 30%;
+    }
+    .main{
+        font-size: 18px;
+        font-weight: bolder;
+        letter-spacing: 1.1px;
+        color: red;
+        margin-bottom: 30px;
+    }
+    
+    .flex-container1{
+        display: flex;
+       
+        /* border: 2px solid black; */
+        /* margin-left: 10px; */
+    }
+    .flex-container1 > .box1{
+        margin-top: 5px;
+        text-align: center;
+        margin-right: 10px;
+    }
+    .flex-container1 > .box1 h2{
+        color: red;
+        font-size: 15px;
+        font-weight: bolder;
+    }
+    .flex-container > .box1 p{
+        text-align: justify;
+        font-size: 5px;
+    
+    }
+    .flex-container1 > .box2 img{
+        height: 300px;
+        width: 200px;
+        margin-top: 55px;
+    }
+
+    .main img{
+        height:30%;
+        width: 100%;
+    }
+    .footer{
+        background-color: red;
+        color: white;
+        padding: 1px;
+        text-align: center;
+        margin-top: 5px;
+        font-size: 10px;
+    }
+    
+   
+}
